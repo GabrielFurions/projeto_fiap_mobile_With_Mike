@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0; 
+    box-sizing: border-box;
+}
+
+:root{
+    --text-primary: #FFF;
+    --text-secundary: #000;
+    --font-heading: 'Poppins';
+    --font-default: 'Montserrat'
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{ 
+    font-family: var(--font-default);
+    color:       var(--text-primary);
+    font-size: 1.6rem;
+}
+
+.hamburguer{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 2.4rem;
+    width: 2.4rem;
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+
+.linha{
+
+    height: .5rem;
+    width: 100%;
+    background-color: #FFF;
+    box-shadow: 0 .2rem .2rem #000;
+}
+
+.Menu{
+    height: 100vh;
+    width: 20rem;
+    position: fixed;
+    right: -120rem;
+    background-color: #FFF;
+    z-index: 9; 
+}
+.show-menu{
+    right: 0;
+    
+
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 25rem 9.2rem;
+    padding-left: 6rem;
+    height: 100vh;
+    overflow: hidden ;
+    position: relative;  
+}
+
+
+header::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/images/bgmitsubishi.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    animation: zoom 5s ease-in-out ;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(1.5);    
+    }
+    100%{
+        transform: scale(1);    
+    }
+}
+
+h1{
+    /* font-family: Libre Baskerville; */
+    font-family: Black Ops One;
+    font-size: 3rem;}
+h2{
+    display: flex;
+    justify-content: center;
+    font-family: Monteserrat;
+    font-size: 3rem;}
+h3{font-size: 3rem;}
+h4{font-size: 2rem;}
+p {font-size: 1.8rem;}
+span {font-size: 2rem;}
+
+.button{
+    background: linear-gradient(90deg, #6A3093, #A044FF);
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    color: #FFF;
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #6A3093 ;
+}
+
+.section-presentation{
+    padding: 5rem;
+    display: flex;
+    color: var(--text-secundary);
+    gap: 3rem;
+}
+
+.section-presentation div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+#section-projects{
+    padding: 4rem;
+    background-color: #212121;
+}
+
+#section-projects ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+#section-projects li{
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.card-image img{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity .5s, bottom .5s;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.card-info h4{
+    color: #28f336;
+}
+
+#section-projects li:hover .card-info{
+    opacity: 1;
+    bottom: 20%;
+}
+
+#section-projects li:hover .card-image img{
+    opacity: .5;
+}
+
+#section-budged{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(./assets/images/bgnfs44.jpg);
+    background-size: cover;
+}
+
+#section-budged form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    background-color: #8C8C8C99;
+    backdrop-filter: blur(1px);
+    border-radius: 10px;
+    width: clamp(300px, 50%, 500px);
+    padding: 2rem;
+}
+
+#section-budged form h4{
+    position: absolute;
+    top: -15%;
+    background-color: #6A3093;
+    padding: .3rem 2rem;
+    border-radius: 5px;
+}
+
+#section-budged form output{
+    grid-column: 2;
+}

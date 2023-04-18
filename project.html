@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- conecta html ao arquivo css -->
+    <link rel="stylesheet" href="./style.css"/>
+    <title>project</title>
+    <script src="./assets/js/script.js"></script> 
+    <script src="   https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></script> 
+
+</head>
+
+<body>
+    <div class="hamburguer">
+        <div class="linha"></div>
+        <div class="linha"></div>
+        <div class="linha"></div>
+    </div>
+
+    <nav class="menu"> 
+
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fa-sharp fa-light fa-house"></i>
+                    Home
+                </a>
+            </li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Carros Iconicos</a></li>
+            <li><a href="">Projetos</a></li>
+            <li><a href="">Orcamento</a></li>
+        </ul>
+
+    </nav>
+
+
+
+
+    <header>
+        <h1>Mitsubishi Lancer Evolution</h1>
+        <span>Velozes e Furiosos - Desafio em Tokyo</span>
+        <a href="#" class="button">saiba mais</a>
+    </header>
+
+    <section id="section-projects">
+        <h2>Os carros mais icônicos dos filmes e jogos você encontra aqui</h2>
+        <ul>
+            <li>
+                <div class="card-image">
+                    <img src="./assets/images/fast.jpg" alt="">
+                </div>
+                <div class="card-info">
+                    <h3>Velozes e Furiosos</h3>
+                    <h4>Dodge charger,Nissan Skyline GTR e muito mais</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <a href="" class="button">saiba mais</a>
+                </div>
+            </li>
+            <li>
+                <div class="card-image">
+                    <img src="./assets/images/batman.jpg" alt="">
+                </div>
+                <div class="card-info">
+                    <h3>Batman</h3>
+                    <h4>Conheça o famoso "Batmovel"</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <a href="" class="button">saiba mais</a>
+                </div>
+            </li>
+            <li>
+                <div class="card-image">
+                    <img src="./assets/images/nfs.jpg" alt="">
+                </div>
+                <div class="card-info">
+                    <h3>Need for Speed</h3>
+                    <h4>Dos jogos direto para o mundo real</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <a href="" class="button">saiba mais</a>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+    
+    <section id="section-budged">
+        <form action="#">
+            <h4>Orçamento</h4>
+            <label for="qtde">Qtde de Carros</label>
+            <input type="number" id="qtde" min="1" value="1">
+            <label for="js">Precisa de JS?</label>
+            <input type="checkbox" id="js">
+            <label for="layout">Precisa de layout?</label>
+            <div>
+                <input type="radio" id="layout_sim" name="layout">
+                <label for="layout_sim">sim, preciso</label>
+                <input type="radio" id="layout_nao" name="layout">
+                <label for="layout_nao">não, já tenho</label>
+            </div>
+            <label for="prazo" id="label_prazo">Prazo</label>
+            <input type="range" id="prazo" min="1" max="10">
+            <output id="output">R$ 100,00</output>
+
+
+        </form>
+    </section>
+    <!--<section id="section-budged">
+        <form action="#">
+            <h4>NewsLetter</h4> 
+            <label for="js">Email</label>
+            <input type="email" id="js">
+            <label for="layout">Deseja receber a NewsLetter?</label>
+            <div>
+                <input type="radio" id="layout-sim" name="layout">
+                <label for="layout-sim">sim!</label>
+                <input type="radio" id="layout-nao" name="layout">
+                <label for="layout-nao">não!</label>
+            </div>
+            <label for="prazo">Prazo</label>
+            <input type="range" id="prazo" min="1" max="10">
+            <output id="preco">R$ 100,00</output>!-->
+
+        </form>
+    </section>
+
+<script src="./assets/js/script.js"></script>
+<script src="./assets/js/menu.js"></script>
+</body>
+</html>
