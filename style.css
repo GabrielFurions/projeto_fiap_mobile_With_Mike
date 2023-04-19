@@ -131,7 +131,7 @@ header::before{
 h1{
     /* font-family: Libre Baskerville; */
     font-family: Black Ops One;
-    font-size: 3rem;}
+    font-size: clamp(3rem,5vw,6rem);}
 h2{
     display: flex;
     justify-content: center;
@@ -253,7 +253,16 @@ span {font-size: 2rem;}
     grid-column: 2;
 }
 
-@media () {
+@media (max-width: 900px) {
+    #secao-projetos ul{
+        flex-direction: column;
+    }
+    .large-only{
+        display: none;
+    }
+    .secao-orcamento form{
+        grid-template-columns: 1fr;
+    }
     
 
 }
